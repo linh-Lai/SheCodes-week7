@@ -18,18 +18,21 @@ ul{
     margin: 0;
     padding:0;
 }
+ul ::first-letter{
+    text-transform: capitalize;
+}
 
 
 li {
 list-style: none;
 margin: 0;
 padding: 0;
-text-transform: capitalize;
 color: rgb(189, 193, 198);
 font-size: 16px;
 font-weight: 100;
 line-height: 19px;
 }
+
 
 
 .weather-app-wrapper {
