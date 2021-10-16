@@ -17,7 +17,6 @@ function formatDate(timestamp) {
 
 
 function displayTemperature(response) {
-  console.log(response.data)
     let location = document.querySelector("#city")
     let temperatureElement = document.querySelector("#temperature");
     let descriptionElement = document.querySelector("#description");
@@ -39,8 +38,20 @@ function displayTemperature(response) {
         "alt", response.data.weather[0].description);
 }
 
+function search(city) {
 let apiKey = "d6ff37a4c170f249f41b8f3e7f2c9d0a";
-let city = "Berlin";
 let apiUrl = `https:/api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
-axios.get(apiUrl).then(displayTemperature)
+axios.get(apiUrl).then(displayTemperature);
+}
+function handleSubmit(event) {
+    event.preventDefault();
+    let cityInputElement = document.querySelector("#city-input");
+    search(cityInputElement.value);
+   
+}
+
+search("New York")
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
