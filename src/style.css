@@ -32,6 +32,10 @@ font-size: 16px;
 font-weight: 100;
 line-height: 19px;
 }
+.footer{
+    text-align: center;
+    text-decoration: none;
+}
 
 
 
@@ -78,3 +82,14 @@ position: relative;
 
 top:-17px;
 }
+
+.weather-temperature .active{
+    color:rgb(33, 33, 33);
+    cursor: default;
+    text-decoration: none;
+}
+
+weather-temperature .active:hover{
+    text-decoration: none;
+}
+

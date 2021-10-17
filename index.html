@@ -51,7 +51,11 @@ src=""
 alt="cloudy" 
 class= "float-left"
 id= "icon"/></span>
-<span class="float-left" > <strong id="temperature">12</strong> <span class="units"><small>°C |<a href="#">°F</a> </small></span>
+<span class="float-left" >
+   <strong id="temperature">12</strong>
+    <span class="units">
+      <small><a href="#" id ="celsius-link" class="active">°C </a>|
+        <a href="#" id="fahrenheit-link">°F</a> </small></span>
     </div>
   </div>
 <div class="col-6" id="list">
@@ -70,10 +74,11 @@ id= "icon"/></span>
 </div>
 </div>
   </div>
-<small>
+<div class="footer" id="footer"><small>
   <a href="https://github.com/linh-Lai/SheCodes-week7"
-  target="_blank"> Open-source code</a> by Linh Lai
+  target="_blank" > Open-source code</a> by Linh Lai
 </small>
+</div>
 </div>
   <script src="src/index.js"></script>
 </body>
