@@ -15,11 +15,11 @@
 </head>
 <body>
   <div class="container">
-  <div class="weather-app-wrapper">
+  <div class="total">
     <div class="weather-app">
       <form id="search-form" id="mb-3">
         <div class="row">
-          <div class="col-9">
+          <div class="col-6">
 <input type="search" 
 placeholder =" Type a city ..."
 class="form-control"
@@ -34,10 +34,8 @@ class="btn btn-primary"/>
 </div>
       </form>
       <div class="overview">
-<h1 id="city">
- 
-</h1>
-<ul>
+<h1 id="city"></h1>
+<ul class="current-description">
   <li>Last update: <span id=date></span> </li>
   <li id="description"></li>
 </ul>
@@ -52,7 +50,7 @@ alt="cloudy"
 class= "float-left"
 id= "icon"/></span>
 <span class="float-left" >
-   <strong id="temperature">12</strong>
+   <strong id="temperature"></strong>
     <span class="units">
       <small><a href="#" id ="celsius-link" class="active">°C </a>|
         <a href="#" id="fahrenheit-link">°F</a> </small></span>
@@ -61,9 +59,6 @@ id= "icon"/></span>
 <div class="col-6" id="list">
   <ul>
     <li>
-      Precipitation: <span id="precipitation"></span>
-    </li>
-    <li>
       Humidity: <span id="humidity"></span>
     </li>
     <li>
@@ -71,10 +66,45 @@ id= "icon"/></span>
     </li>
   </ul>
 </div>
+<div class="forecast">
+          <div class="row">
+    <div class="col-2">
+      <h3> ☀️</h3>
+      <br />
+      <h6>17 - <strong>25°C</strong></h6>
+      <p>Mon</p>
+    </div>
+    <div class="col-2">
+      <h3>☀️</h3>
+      <br />
+      <h6>17 - <strong>23°C</strong></h6>
+      <p>Tue</p>
+    </div>
+    <div class="col-2">
+     <h3>☁️</h3> 
+      <br />
+      <h6>15 - <strong>21°C</strong></h6>
+      <p>Wed</p>
+    </div>
+    <div class="col-2">
+     <h3> 🌧</h3> 
+      <br />
+      <h6>13 - <strong>19°C</strong></h6>
+      <p>Thu</p>
+    </div>
+    <div class="col-2">
+     <h3> 🌤</h3> 
+      <br />
+      <h6>17 - <strong>19°C</strong></h6>
+      <p>Fri</p></div>
+  </div>
+        </div>
+      </div>
 </div>
 </div>
   </div>
-<div class="footer" id="footer"><small>
+
+<div class="owner" id="owner"><small>
   <a href="https://github.com/linh-Lai/SheCodes-week7"
   target="_blank" > Open-source code</a> by Linh Lai
 </small>
